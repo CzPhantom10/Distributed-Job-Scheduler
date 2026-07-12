@@ -9,8 +9,11 @@ def main():
     processes = []
     try:
         # 1. Start API (FastAPI via uvicorn)
+        import os
+        host = "0.0.0.0"
+        port = os.getenv("PORT", "8000")
         api_proc = subprocess.Popen(
-            [sys.executable, "-m", "uvicorn", "app.main:app", "--host", "127.0.0.1", "--port", "8000"],
+            [sys.executable, "-m", "uvicorn", "app.main:app", "--host", host, "--port", port],
             stdout=None, stderr=None
         )
         processes.append(("API", api_proc))
