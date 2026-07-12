@@ -4,6 +4,10 @@ import time
 import signal
 
 def main():
+    # 0. Apply database migrations to the remote database automatically on startup
+    print("Running database migrations...")
+    subprocess.run([sys.executable, "-m", "alembic", "upgrade", "head"])
+
     print("Starting all backend services concurrently...")
     
     processes = []
