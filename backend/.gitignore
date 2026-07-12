@@ -6,9 +6,6 @@ __pycache__/
 .mypy_cache/
 dist/
 *.egg-info/
-
-
-# Virtual environments
 myenv/
 .venv/
 venv/
