@@ -3,7 +3,7 @@ from sqlalchemy.orm import DeclarativeBase
 
 from app.core.config import settings
 
-db_url = settings.database_url
+db_url = settings.database_url.strip()
 if db_url.startswith("postgresql://"):
     db_url = db_url.replace("postgresql://", "postgresql+asyncpg://", 1)
 
