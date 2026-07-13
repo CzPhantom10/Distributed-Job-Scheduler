@@ -1,6 +1,6 @@
 # JobFlow — Distributed Job Scheduler
 
-A production-grade distributed job scheduling platform built to demonstrate backend engineering excellence: clean architecture, atomic operations, observability, and reliable job execution at scale.
+A production grade distributed job scheduling platform built to demonstrate backend engineering excellence: clean architecture, atomic operations, observability, and reliable job execution at scale.
 
 **Developed by: Prateek Sinha**
 
